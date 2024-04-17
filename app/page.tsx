@@ -3,7 +3,7 @@
 import NavBar from "@/components/NavBar"
 import Hero from "@/components/Hero"
 import Searchbar from "@/components/SearchBar"
-// import ExercisesList from "@/components/ExercisesList"
+import ExercisesList from "@/components/ExercisesList"
 
 import { fetchExercises } from "@/utils"
 import { HomeProps } from "@/types"
@@ -26,7 +26,7 @@ export default async function Home({ searchParams }: HomeProps) {
       <NavBar />
       <Hero />
       <Searchbar />
-      {/* <ExercisesList isDataEmpty={isDataEmpty} allExercises={allExercises} /> */}
+      <ExercisesList isDataEmpty={isDataEmpty} allExercises={allExercises} />
     </>
   )
 }
